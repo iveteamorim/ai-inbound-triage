@@ -2,6 +2,19 @@
 
 AI-powered inbound triage system focused on value, risk and next actions.
 
+## Overview
+
+This project demonstrates how inbound messages can be turned into operational decisions.
+
+Instead of only classifying conversations, the system focuses on:
+
+- estimating potential value
+- identifying leads "at risk"
+- prioritizing based on value × delay
+- recommending next actions
+
+The goal is to move from AI outputs to real business outcomes.
+
 ## What it does
 
 Given inbound messages, the system:
@@ -11,11 +24,11 @@ Given inbound messages, the system:
 - calculates an at-risk score based on value and time without response
 - recommends the next action
 
-## Why it matters
+## Why this matters
 
-Most AI examples focus on classification.
+In real-world operations, slow response times lead to lost revenue.
 
-This example focuses on operational decision-making: what should be handled first, where revenue is at risk, and what to do next.
+This system prioritizes conversations based on economic impact, not just urgency.
 
 ## Demo logic
 
@@ -31,11 +44,10 @@ estimated value x hours since last reply
 
 - Next.js
 - TypeScript
-- Tailwind CSS
+- CSS
 
 ## Run locally
 
 ```bash
 npm install
 npm run dev
-```
